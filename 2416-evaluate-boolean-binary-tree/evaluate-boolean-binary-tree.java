@@ -22,13 +22,13 @@ class Solution {
         boolean left = evaluateTree(root.left);
         boolean right = evaluateTree(root.right);
         {
-            if(root.val == 2)
+            if(root.val == 3)
             {
-                return left || right;
+                return left && right;
             }
             else
             {
-                return left && right;
+                return left || right;
             }
         }
     }
